@@ -25,4 +25,22 @@ module.exports = class ImprovedMath {
    random(min = 0, max = 1) {
       return Math.random() * (max - min + 1) + min;
    }
+   fibonacci(number) {
+      const memo = {};
+      function run(num) {
+         let value;
+         if (memo[num]) {
+            value = memo[num];
+         } else {
+            if (num < 2) {
+               value = num;
+            } else {
+               value = run(num - 1) + run(num - 2);
+               memo[num] = value;
+            }
+         }
+         return value;
+      }
+      return run(number);
+   }
 };

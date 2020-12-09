@@ -55,6 +55,11 @@ vector.add(math.new_vector(2, 4)); // Vector { x: 6, y: 8 }
 vector.sub(math.new_vector(5, 7)); // Vector { x: 1, y:  1}
 const distance = vector.dist(vector_copy); // 1.414213...
 ```
+### math.fibonacci(index:Number)
+returns the value of the index from the fibonacci sequence
+```js
+const value = math.fibonacci(1); // 1
+```
 ## Examples
 ```js
 console.log(math.add(5, 4)); // 9
