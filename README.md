@@ -1,5 +1,5 @@
 # Useful math functions
-This library is a utility library for using math functions with ease (Ultra Fast)
+This library is a utility library for using math functions with ease (Ultra Fast) and (made to complement the Math in javascript)
 ## Install
 ```bash
 npm install improved-math

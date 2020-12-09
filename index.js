@@ -1,28 +1,5 @@
 'use strict';
-class Vector {
-   constructor(x, y) {
-      this.x = x;
-      this.y = y;
-   }
-   copy() {
-      return new Vector(this.x, this.y);
-   }
-   scale(factor) {
-      this.x *= factor;
-      this.y *= factor;
-   }
-   add(vector) {
-      this.x += vector.x;
-      this.y += vector.y;
-   }
-   sub(vector) {
-      this.x -= vector.x;
-      this.y -= vector.y;
-   }
-   dist(vector) {
-      return Math.sqrt((this.x - vector.x) * (this.x - vector.x) + (this.y - vector.y) * (this.y - vector.y));
-   }
-}
+const Vector = require('./vector.js');
 module.exports = class ImprovedMath {
    add(a, b) {
       return a + b;
@@ -36,7 +13,16 @@ module.exports = class ImprovedMath {
    circle_area_radius(radius) {
       return radius * radius * Math.PI;
    }
+   circumference_radius(radius) {
+      return radius * 2 * Math.PI;
+   }
    new_vector(x, y) {
       return new Vector(x, y);
+   }
+   lerp(start, end, time) {
+      return start * (1 - time) + end * time;
+   }
+   random(min = 0, max = 1) {
+      return Math.random() * (max - min + 1) + min;
    }
 };
