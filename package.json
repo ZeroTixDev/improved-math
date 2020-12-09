@@ -1,6 +1,6 @@
 {
   "name": "improved-math",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A package that gives you access to useful math equations by just using a method",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,9 @@
   ],
   "author": "ZeroTix",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "seedrandom": "^3.0.5"
+  },
   "devDependencies": {
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",

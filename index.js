@@ -1,5 +1,6 @@
 'use strict';
 const Vector = require('./vector.js');
+const seedrandom = require('seedrandom');
 module.exports = class ImprovedMath {
    add(a, b) {
       return a + b;
@@ -26,21 +27,15 @@ module.exports = class ImprovedMath {
       return Math.random() * (max - min + 1) + min;
    }
    fibonacci(number) {
-      const memo = {};
-      function run(num) {
-         let value;
-         if (memo[num]) {
-            value = memo[num];
-         } else {
-            if (num < 2) {
-               value = num;
-            } else {
-               value = run(num - 1) + run(num - 2);
-               memo[num] = value;
-            }
-         }
-         return value;
-      }
-      return run(number);
+      // PitsPower helped make this code since i dont know formula
+      const a = (1 + Math.sqrt(5)) / 2;
+      const b = (1 - Math.sqrt(5)) / 2;
+      return Math.round((a ** number - b ** number) / Math.sqrt(5));
+   }
+   seed(key) {
+      return seedrandom(key)();
+   }
+   seed_rng(key) {
+      return seedrandom(key);
    }
 };

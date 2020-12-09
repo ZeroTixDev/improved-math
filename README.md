@@ -60,6 +60,18 @@ returns the value of the index from the fibonacci sequence
 ```js
 const value = math.fibonacci(1); // 1
 ```
+### math.seed(key:String)
+returns a predictable random number based on the key
+```js
+console.log(math.seed('key')); // Always 0.057609484...
+```
+### math.seed_rng(key:String)
+returns a predictable random number generator based on the key
+```js
+const rng = math.seed_rng('key');
+console.log(rng()); // Always 0.05760948...
+console.log(rng()); // Always 0.52797544...
+```
 ## Examples
 ```js
 console.log(math.add(5, 4)); // 9
