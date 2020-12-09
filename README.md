@@ -1,12 +1,12 @@
 # Useful math functions
-This library is a utility library for using math functions with ease.
+This library is a utility library for using math functions with ease (Ultra Fast)
 ## Install
 ```bash
-npm install math-library-zero
+npm install improved-math
 ```
 ## Usage
 ```js
-const ImprovedMath = require("math-library-zero");
+const ImprovedMath = require("improved-math");
 const math = new ImprovedMath();
 ```
 Then you can call functions on the math variable
