@@ -1,0 +1,12 @@
+{
+  "name": "math-library-zero",
+  "version": "1.0.2",
+  "description": "A package that gives you access to useful math equations by just using a method",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["math", "utility", "math-library","library", "math-functions"],
+  "author": "ZeroTix",
+  "license": "MIT"
+}
