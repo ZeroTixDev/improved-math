@@ -38,4 +38,7 @@ module.exports = class ImprovedMath {
    seed_rng(key) {
       return seedrandom(key);
    }
+   round(number, places = 1) {
+      return Math.round(number * 10 ** places) / 10 ** places;
+   }
 };

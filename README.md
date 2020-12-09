@@ -72,6 +72,11 @@ const rng = math.seed_rng('key');
 console.log(rng()); // Always 0.05760948...
 console.log(rng()); // Always 0.52797544...
 ```
+### math.round(number:Number, decimals:Number)
+returns a rounded value, max precision is n decimals
+```js
+const round = math.round(1.234567, 3); // 1.235
+```
 ## Examples
 ```js
 console.log(math.add(5, 4)); // 9
