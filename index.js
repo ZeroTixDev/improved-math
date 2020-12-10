@@ -41,4 +41,7 @@ module.exports = class ImprovedMath {
    round(number, places = 1) {
       return Math.round(number * 10 ** places) / 10 ** places;
    }
+   map(input, input_start, input_end, output_start, output_end) {
+      return output_start + ((output_end - output_start) / (input_end - input_start)) * (input - input_start);
+   }
 };

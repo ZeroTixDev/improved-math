@@ -1,6 +1,6 @@
 {
   "name": "improved-math",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A package that gives you access to useful math equations by just using a method",
   "main": "index.js",
   "scripts": {

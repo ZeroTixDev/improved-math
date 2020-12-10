@@ -77,6 +77,11 @@ returns a rounded value, max precision is n decimals
 ```js
 const round = math.round(1.234567, 3); // 1.235
 ```
+### math.map(value:Number, input_start:Number, input_end:Number, output_start:Number, output_end:Number)
+returns the value mapped to the output dimensions (range mapping)
+```js
+const val = math.map(25, 0, 50, 0, 100); // 50
+```
 ## Examples
 ```js
 console.log(math.add(5, 4)); // 9
