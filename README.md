@@ -7,8 +7,7 @@ npm install improved-math
 ```
 ## Documentation
 ```js
-const ImprovedMath = require("improved-math");
-const math = new ImprovedMath();
+const math = require("improved-math");
 ```
 ### math.add(a:Number, b:Number)
 returns the sum of the two numbers
